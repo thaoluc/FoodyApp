@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackgroundHP">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:srcCompat="@drawable/chuf" />
+
+        <RadioGroup
+            android:id="@+id/rd_address_food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_radiogroup_homepage">
+
+            <RadioButton
+                android:id="@+id/rdAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/address"
+                android:button="@android:color/transparent"
+                android:background="@drawable/custom_radio_address"
+                android:padding="10dp"
+                android:checked="true"
+                android:textColor="@drawable/changecolortext_radio_homepage"/>
+
+            <RadioButton
+                android:id="@+id/rdFood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/food"
+                android:button="@android:color/transparent"
+                android:background="@drawable/custom_radio_food"
+                android:padding="10dp"
+                android:textColor="@drawable/changecolortext_radio_homepage"/>
+        </RadioGroup>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:srcCompat="@drawable/ic_add_white_24dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="15dp"/>
+    </android.support.v7.widget.Toolbar>
+
+   <android.support.v4.view.ViewPager
+       android:id="@+id/viewpager_homepage"
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+
+
+</LinearLayout>

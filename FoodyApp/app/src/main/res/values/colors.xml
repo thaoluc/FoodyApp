@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#CD2027</color>
+    <color name="colorAccent">#ffffff</color>
+    <color name="transparentBackgroundLogin">#66000000</color>
+    <color name="colorFB">#189aca</color>
+    <color name="colorGG">#cd2027</color>
+    <color name="colorBlack">#000</color>
+    <color name="colorBackgroundHP">#ccc</color>
+</resources>
